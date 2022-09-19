@@ -1,6 +1,6 @@
 const form = document.querySelector(".form");
 
-function countdown(totalSeconds) {
+function setElements(totalSeconds) {
   const years = Math.floor(totalSeconds / 3600 / 24 / 30 / 12 - 1);
   const months = Math.floor((totalSeconds / 3600 / 24 / 30) % 12);
   const days = Math.floor((totalSeconds / (3600 * 24)) % 30);
@@ -41,7 +41,7 @@ form.birthday.addEventListener("input", (e) => {
   console.log(totalSeconds);
   console.log(time);
 
-  countdown(totalSeconds);
+  setElements(totalSeconds);
 });
 
 function formatTime(time) {
