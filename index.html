@@ -8,17 +8,19 @@
   <link rel="stylesheet" href="./src/css/style.css">
   <title>Years Left</title>
 </head>
+
 <body>
   <div class="container">
-    <h1>How many years do want to live?</h1>
+    <h1>How long do you want to live?</h1>
     <form class="form">
       <fieldset class="field-user-input">
         <label for="yearsTarget" name="years" class="lbl-user-inp">
         </label>
-        <input type="number" id="yearsTarget" name="yearsTarget" class="user-input user-input-years" autofocus>
+        <input type="number" id="yearsTarget" name="yearsTarget" placeholder='100' class="user-input user-input-years"
+          autofocus>
         <span class="years">years</span>
         <label for="bDate" class="lbl-user-inp">
-          and My Birthday Date is:
+          and your Birthday Date is:
         </label>
         <input type="date" id="bDate" name="birthday" class="user-input user-input-bDay">
       </fieldset>
@@ -31,12 +33,12 @@
       <span class='timer__text'><b>months</b></span><br>
       <span id='timerDays'>0</span>
       <span class='timer__text'><b>days</b></span><br>
-      <span id='timerHours'>0</span>
-      <span class='timer__text'><b>hours</b></span><br>
-      <span id='timerMinutes'>0</span>
-      <span class='timer__text'><b>minutes</b></span><br>
-      <span id='timerSeconds'>0:00</span>
-      <span class='timer__text'><b>seconds</b></span>
+      <!--           <span id='timerHours'>0</span>
+            <span class='timer__text'><b>hours</b></span><br>
+            <span id='timerMinutes'>0</span>
+            <span class='timer__text'><b>minutes</b></span><br>
+            <span id='timerSeconds'>0:00</span>
+            <span class='timer__text'><b>seconds</b></span> -->
       <h2>left</h2>
     </div>
   </div>
